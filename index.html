@@ -6,7 +6,7 @@ layout: default
 <div class="row">
   <div class="tile-bucket col-sm-12">
     {% for post in site.posts %}
-    <a class="tile-link" href="{{ post.url | prepend: site.baseurl }}">
+    <a class="tile-link" href="{{ post.url | remove_first: "/"  }}">
       <span class="tile-container">
         <img id="{{ post.title | split:": " | first | split: " " | last }}-img" class="tile" src="">
         <div id="{{ post.title | split:": " | first | split: " " | last }}-text" class="color-filter tile-text"> 
