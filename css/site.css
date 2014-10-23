@@ -123,6 +123,7 @@ h3{
 .tile{
   margin-bottom: 8px;
   position: relative;
+  margin-right: 4px;
 }
 
 .tile-text{
